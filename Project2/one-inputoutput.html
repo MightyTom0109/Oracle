@@ -7,18 +7,35 @@
     <style>
 
         /* STYLE FOR THE INPUT FIELD */
-        #charInput {
+        #charInput { 
+            position: absolute;
+            left: 30%;
+            top: 10%;
+            width: 40%;
+            height: 10%;
+            font-size: 30px;
+            text-align: center;
 
         }
 
         /* STYLE FOR THE SUBMIT BUTTON */
-        #submitButton {
+        #submitButton { position: absolute;
+            left: 45%;
+            top: 22%;
+            width: 10%;
+            height: 5%;
+
 
         }
 
         /* STYLE FOR THE IMAGE */
         #displayedImage {
             display: none; /* This line is mandatory */
+            width: 400px;
+            height: 250px;
+            left: 39%;
+            top: 40%;
+            position: absolute;
         }
     </style>
 </head>
@@ -40,14 +57,14 @@
         // Array of images
         // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
         const images = [
-            "https://via.placeholder.com/300/00FF00/FFFFFF?text=A", //A
-            "https://via.placeholder.com/300/00FF00/FFFFFF?text=B", //B
-            "https://via.placeholder.com/300/0000FF/FFFFFF?text=C", //C
-            "https://via.placeholder.com/300/FFFF00/000000?text=D", //D
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=E", //E
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=F", //F
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=G", //G
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=H", //H
+            "https://cdn.pixabay.com/photo/2020/05/18/19/14/apple-5188076_640.jpg", //A
+            "https://th.bing.com/th/id/OIP.fq6VMNnUgGmrWCmjrE6WsQHaGG?rs=1&pid=ImgDetMain", //B
+            "https://wallpapers.com/images/hd/cherry-varieties-dtw2oqx5lf9x1c6h.jpg", //C
+            "https://www.healthbenefitstimes.com/9/gallery/dragon-fruit/Dragon-fruit.jpg", //D
+            "https://www.mashed.com/img/gallery/23-eggplant-recipes-even-meat-eaters-will-love/l-intro-1662170192.jpg", //E
+            "https://static.vecteezy.com/system/resources/previews/028/821/241/large_2x/fig-fruit-isolated-on-white-background-ai-generated-photo.jpg", //F
+            "https://www.collinsdictionary.com/images/full/grape_229112122.jpg?version=4.0.181", //G
+            "https://static.agcanada.com/wp-content/uploads/sites/4/2019/03/Meseyton-PeoniesPic1of3.jpg", //H
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=I", //I
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=J", //J
             "https://via.placeholder.com/300/FF00FF/FFFFFF?text=K", //K

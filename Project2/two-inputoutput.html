@@ -9,35 +9,71 @@
         /* STYLE FOR THE INPUT FIELD */
         #charInput1 {
 
+            width: 30%;
+            height: 8%;
+            position: absolute;
+            top: 80vh;
+            left: 10vw;
+            font-size: 30px;
+            text-align: center;
+
         }
 
         #charInput2 {
+
+            width: 30%;
+            height: 8%;
+            position: absolute;
+            top: 80vh;
+            right: 10vw;
+            font-size: 30px;
+            text-align: center;
 
         }
 
         /* STYLE FOR THE SUBMIT BUTTON */
         #submitButton {
 
+            width: 8%;
+            height: 4%;
+            position: absolute;
+            top: 82vh;
+            right: 46vw;
+            
+            text-align: center;
+
         }
 
         /* STYLE FOR THE IMAGE */
         #displayedImage {
             display: none; /* This line is mandatory */
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            left: 36vw;
+            top: 30vh;
+
         }
+
+        h1{text-align: center;}
+        h2{text-align: center;}
     </style>
 </head>
 <body>
 
     
     <!-- INPUT FIELD FOR 1 CHARACTER -->
-    <input type="text" id="charInput1" maxlength="1">
-    <input type="text" id="charInput2" maxlength="1">
+    <input type="text" id="charInput1" maxlength="99">
+    <input type="text" id="charInput2" maxlength="99">
 
     <!-- BUTTON TO DISPLAY IMAGE -->
-    <button onclick="displayImage()" id="submitButton">Show Image</button>
+    <button onclick="displayImage()" id="submitButton">React</button>
 
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image">
+<br><br>
+    <h1>Explore simple and commmon chemical compounds</h1>
+    <h2>Enter chemical elements on both sides</h2>
 
 
     <!-- Image Display Script Below -->
@@ -50,24 +86,36 @@
             const input1_letter = document.getElementById("charInput1").value.toUpperCase();
             const input2_letter = document.getElementById("charInput2").value.toUpperCase();
             
-            //Number
-            const input1_number = input1_letter.charCodeAt(0); //Converts the letter to a number (https://www.ascii-code.com); For instance, 'A' is 65 in ASCII
-            const input2_number = input2_letter.charCodeAt(0); //Converts the letter to a number (https://www.ascii-code.com); For instance, 'A' is 65 in ASCII
-
+           
             //HINTS
             //HINT 1: You can compare strings with comparison operators and boolean operators
             //COMPARISON & LOGICAL OPERATORS: https://www.w3schools.com/js/js_comparisons.asp
-            if(input1_letter === "A" && input2_letter !== "B") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
-                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+            if(input1_letter === "H2" && input2_letter == "O") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://t3.ftcdn.net/jpg/05/18/71/60/360_F_518716067_4Dnm15UtdC0exd5tzlGlli5QVbjpQ1Qb.jpg"
                 imgElement.style.display = "block";
             }
 
 
-            //HINT 2: Assign an image based numerical values
-            if(input1_number == 67 && input2_number == 68) { //If input1_number is 67 (C) AND input2_number is 68 (D), then show this image
-                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+            if(input1_letter === "C" && input2_letter == "O2") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://static.vecteezy.com/system/resources/previews/010/886/707/non_2x/co2-carbon-dioxide-toxic-gas-molecules-concept-flat-illustration-vector.jpg"
                 imgElement.style.display = "block";
-            } 
+            }
+
+            if(input1_letter === "Na" && input2_letter == "Cl") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://i.ytimg.com/vi/VGJxXZXe5Hw/maxresdefault.jpg"
+                imgElement.style.display = "block";
+            }
+
+            if(input1_letter === "C" && input2_letter == "H4") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://www.aquaportail.com/pictures2108/methane-ch4.jpg"
+                imgElement.style.display = "block";
+            }
+
+            if(input1_letter === "H2" && input2_letter == "SO4") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://th.bing.com/th/id/OIP.5GUSsFFz4qETXaJyxLNx-QHaE2?rs=1&pid=ImgDetMain"
+                imgElement.style.display = "block";
+            }
+
 
 
             //HINT 3: You can perform simple math operations on the variables

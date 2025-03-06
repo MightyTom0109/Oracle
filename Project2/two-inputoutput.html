@@ -16,6 +16,7 @@
             left: 10vw;
             font-size: 30px;
             text-align: center;
+            border: solid black 3px;
 
         }
 
@@ -28,6 +29,8 @@
             right: 10vw;
             font-size: 30px;
             text-align: center;
+            border: solid black 3px;
+            
 
         }
 
@@ -39,7 +42,7 @@
             position: absolute;
             top: 82vh;
             right: 46vw;
-            
+            border: solid black 3px;
             text-align: center;
 
         }
@@ -57,14 +60,21 @@
 
         h1{text-align: center;}
         h2{text-align: center;}
+        h3{text-align: center;}
+        .table{color: blue;}
+        body{background-image: url(https://static.vecteezy.com/system/resources/previews/000/235/561/original/vector-blue-molecules-background-for-science-and-medical-healthcare.jpg);
+            background-position: center;
+ 
+  background-size: cover;}
+
     </style>
 </head>
 <body>
 
     
     <!-- INPUT FIELD FOR 1 CHARACTER -->
-    <input type="text" id="charInput1" maxlength="99">
-    <input type="text" id="charInput2" maxlength="99">
+    <input type="text" id="charInput1" maxlength="99" placeholder="eg. H2">
+    <input type="text" id="charInput2" maxlength="99" placeholder="eg. O">
 
     <!-- BUTTON TO DISPLAY IMAGE -->
     <button onclick="displayImage()" id="submitButton">React</button>
@@ -72,8 +82,9 @@
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image">
 <br><br>
-    <h1>Explore simple and commmon chemical compounds</h1>
+    <h1>Explore simple and commmon chemical compounds <div class="table">(Enter P + T to view the periodic Table)</div></h1>
     <h2>Enter chemical elements on both sides</h2>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <!-- Image Display Script Below -->
@@ -101,20 +112,45 @@
                 imgElement.style.display = "block";
             }
 
-            if(input1_letter === "Na" && input2_letter == "Cl") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
-                imgElement.src = "https://i.ytimg.com/vi/VGJxXZXe5Hw/maxresdefault.jpg"
-                imgElement.style.display = "block";
-            }
 
             if(input1_letter === "C" && input2_letter == "H4") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
                 imgElement.src = "https://www.aquaportail.com/pictures2108/methane-ch4.jpg"
                 imgElement.style.display = "block";
             }
 
+            if(input1_letter === "NA" && input2_letter == "CL") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://th.bing.com/th/id/OIP.IdyAV95W8s0M8DQsJ1b9OgHaG9?rs=1&pid=ImgDetMain"
+                imgElement.style.display = "block";
+            }
+
+
             if(input1_letter === "H2" && input2_letter == "SO4") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
                 imgElement.src = "https://th.bing.com/th/id/OIP.5GUSsFFz4qETXaJyxLNx-QHaE2?rs=1&pid=ImgDetMain"
                 imgElement.style.display = "block";
             }
+
+            if(input1_letter === "P" && input2_letter == "T") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://cdn.britannica.com/45/7445-050-CA28EA33/version-periodic-table-elements.jpg"
+                imgElement.style.display = "block";
+            }
+            if(input1_letter === "NAH" && input2_letter == "CO3") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://engineeringhulk.com/wp-content/uploads/2023/06/NAHCO3.jpg"
+                imgElement.style.display = "block";
+            }
+            if(input1_letter === "H2" && input2_letter == "O2") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://cdn.shopify.com/s/files/1/0197/0894/products/omm_2-16_w_2_d.jpg?v=1571439046"
+                imgElement.style.display = "block";
+            }
+            if(input1_letter === "CA" && input2_letter == "CO3") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://www.calcium-carbonate.net/files/2019/05/Calcium-Carbonate.png"
+                imgElement.style.display = "block";
+            }
+            if(input1_letter === "NA2" && input2_letter == "CO3") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://th.bing.com/th/id/OIP.QYQiriwwnqUSRfH7i1Pb7QHaDw?rs=1&pid=ImgDetMain"
+                imgElement.style.display = "block";
+            }
+
+
 
 
 
